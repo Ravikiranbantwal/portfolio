@@ -19,6 +19,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "south-indian-restaurant",
+    title: "South Indian Restaurant",
+    description: "Modern restaurant website with online ordering and menu management.",
+    longDescription: "A comprehensive restaurant website featuring online food ordering, menu management, table reservations, and customer reviews. Built with React, TypeScript, and modern web technologies. Includes responsive design, payment integration, and real-time order tracking.",
+    image: "/assets/images/projects/restaurant-preview.jpg",
+    images: [
+      "/assets/images/projects/restaurant-1.jpg",
+      "/assets/images/projects/restaurant-2.jpg",
+      "/assets/images/projects/restaurant-3.jpg"
+    ],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion", "React Router", "React Hot Toast"],
+    category: "web",
+    featured: true,
+    links: {
+      demo: "https://south-indian-restaurant-rkbantwal.netlify.app",
+      github: "https://github.com/Ravikiranbantwal/portfolio/tree/main/south-indian-restaurant"
+    },
+    status: "completed",
+    year: 2024
+  },
+  {
     id: "genz-portfolio-demo",
     title: "Gen Z Portfolio Demo",
     description: "Next-generation portfolio with cyberpunk aesthetics and 3D animations.",

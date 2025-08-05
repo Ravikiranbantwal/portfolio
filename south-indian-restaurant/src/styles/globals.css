@@ -1,0 +1,290 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #fdf8f6;
+    color: #43302b;
+    line-height: 1.6;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f2e8e5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f38917;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #e4730c;
+  }
+
+  /* Selection styles */
+  ::selection {
+    background: #f38917;
+    color: white;
+  }
+}
+
+@layer components {
+  /* Button Components */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .btn:focus-visible {
+    outline: 2px solid #f38917;
+    outline-offset: 2px;
+  }
+
+  .btn:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-gradient text-white shadow-lg hover:shadow-xl hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-brand-500 border-2 border-brand-500 hover:bg-brand-50 hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent text-brand-500 border-2 border-brand-500 hover:bg-brand-500 hover:text-white hover:scale-105 active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent text-brand-500 hover:bg-brand-50 hover:scale-105 active:scale-95;
+  }
+
+  /* Card Components */
+  .card {
+    @apply bg-white rounded-2xl shadow-card border border-warm-200 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply card hover:shadow-card-hover hover:-translate-y-1 cursor-pointer;
+  }
+
+  .card-food {
+    @apply card-hover shadow-food border-brand-100;
+  }
+
+  /* Input Components */
+  .input {
+    @apply w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all duration-200 bg-white;
+  }
+
+  .input-error {
+    @apply input border-red-500 focus:ring-red-500;
+  }
+
+  /* Badge Components */
+  .badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-medium;
+  }
+
+  .badge-spicy {
+    @apply badge bg-red-100 text-red-800;
+  }
+
+  .badge-mild {
+    @apply badge bg-green-100 text-green-800;
+  }
+
+  .badge-medium {
+    @apply badge bg-yellow-100 text-yellow-800;
+  }
+
+  .badge-veg {
+    @apply badge bg-emerald-100 text-emerald-800;
+  }
+
+  .badge-special {
+    @apply badge bg-brand-100 text-brand-800;
+  }
+
+  /* Overlay Components */
+  .overlay {
+    @apply fixed inset-0 bg-black bg-opacity-50 z-40 transition-opacity duration-300;
+  }
+
+  .modal {
+    @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+  }
+
+  .modal-content {
+    @apply bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto;
+  }
+
+  /* Restaurant Bill Styles */
+  .bill-paper {
+    @apply bg-white shadow-2xl rounded-lg border-2 border-dashed border-warm-300 p-6 font-mono text-sm;
+    background-image: 
+      linear-gradient(90deg, #f2e8e5 1px, transparent 1px),
+      linear-gradient(#f2e8e5 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .bill-header {
+    @apply text-center border-b-2 border-dashed border-warm-400 pb-4 mb-4;
+  }
+
+  .bill-item {
+    @apply flex justify-between items-center py-1 border-b border-dotted border-warm-300;
+  }
+
+  .bill-total {
+    @apply font-bold text-lg border-t-2 border-double border-warm-600 pt-2 mt-2;
+  }
+
+  /* Spice Level Indicators */
+  .spice-indicator {
+    @apply flex items-center space-x-1;
+  }
+
+  .spice-dot {
+    @apply w-2 h-2 rounded-full;
+  }
+
+  .spice-mild .spice-dot {
+    @apply bg-green-500;
+  }
+
+  .spice-medium .spice-dot {
+    @apply bg-yellow-500;
+  }
+
+  .spice-hot .spice-dot {
+    @apply bg-red-500;
+  }
+
+  /* Loading Animations */
+  .loading-dots {
+    @apply flex space-x-1;
+  }
+
+  .loading-dot {
+    @apply w-2 h-2 bg-brand-500 rounded-full animate-bounce;
+  }
+
+  .loading-dot:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .loading-dot:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  /* Menu Category Tabs */
+  .tab {
+    @apply px-6 py-3 rounded-full font-medium transition-all duration-300 cursor-pointer;
+  }
+
+  .tab-active {
+    @apply tab bg-brand-gradient text-white shadow-lg;
+  }
+
+  .tab-inactive {
+    @apply tab bg-white text-brand-500 border border-brand-200 hover:bg-brand-50;
+  }
+
+  /* Quantity Controls */
+  .quantity-btn {
+    @apply w-8 h-8 rounded-full bg-brand-100 text-brand-600 hover:bg-brand-200 transition-colors duration-200 flex items-center justify-center font-bold;
+  }
+
+  /* Cart Animation */
+  .cart-pulse {
+    animation: cartPulse 0.3s ease-in-out;
+  }
+
+  @keyframes cartPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+  /* Success Checkmark */
+  .success-checkmark {
+    animation: successScale 0.5s ease-in-out;
+  }
+
+  @keyframes successScale {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .bg-spice-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f38917' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .rotate-y-12 {
+    transform: rotateY(12deg);
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+
+  /* Print styles for bills */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    
+    .bill-paper {
+      box-shadow: none;
+      border: 1px solid #000;
+      border-radius: 0;
+      background: white;
+    }
+  }
+}
