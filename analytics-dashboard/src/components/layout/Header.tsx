@@ -6,7 +6,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 const Header: React.FC = () => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
-  const { theme, setTheme, effectiveTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   const notifications = [
     {
