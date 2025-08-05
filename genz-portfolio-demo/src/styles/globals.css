@@ -89,13 +89,18 @@
 }
 
 @layer components {
-  /* Neon Text Effects - Further Reduced Intensity (50% less) */
+  /* Neon Text Effects - Minimal Intensity */
   .text-neon {
     color: var(--neon-pink);
     text-shadow: 
-      0 0 1px currentColor,
-      0 0 2px currentColor;
-    animation: neon-pulse 2s ease-in-out infinite alternate;
+      0 0 0.5px currentColor;
+    animation: neon-pulse 3s ease-in-out infinite alternate;
+  }
+
+  /* Subtle Neon Pulse Animation */
+  @keyframes neon-pulse {
+    0% { text-shadow: 0 0 0.5px currentColor; }
+    100% { text-shadow: 0 0 1px currentColor; }
   }
 
   .text-neon-blue {
