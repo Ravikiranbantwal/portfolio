@@ -38,7 +38,7 @@
     position: relative;
   }
 
-  /* Animated Background */
+  /* Animated Background - Reduced Intensity */
   body::before {
     content: '';
     position: fixed;
@@ -47,9 +47,9 @@
     width: 100%;
     height: 100%;
     background: 
-      radial-gradient(circle at 20% 80%, rgba(255, 0, 128, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 80% 20%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
-      radial-gradient(circle at 40% 40%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+      radial-gradient(circle at 20% 80%, rgba(255, 0, 128, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(0, 102, 255, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(0, 255, 136, 0.05) 0%, transparent 50%);
     animation: float 10s ease-in-out infinite;
     pointer-events: none;
     z-index: -1;
@@ -89,42 +89,34 @@
 }
 
 @layer components {
-  /* Neon Text Effects */
+  /* Neon Text Effects - Reduced Intensity */
   .text-neon {
     color: var(--neon-pink);
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor,
-      0 0 20px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor;
     animation: neon-pulse 2s ease-in-out infinite alternate;
   }
 
   .text-neon-blue {
     color: var(--neon-blue);
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor,
-      0 0 20px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor;
   }
 
   .text-neon-green {
     color: var(--neon-green);
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor,
-      0 0 20px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor;
   }
 
   .text-neon-purple {
     color: var(--neon-purple);
     text-shadow: 
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 15px currentColor,
-      0 0 20px currentColor;
+      0 0 2px currentColor,
+      0 0 4px currentColor;
   }
 
   /* Glitch Effect */
@@ -166,20 +158,20 @@
   }
 
   .glass-neon {
-    background: rgba(255, 0, 128, 0.1);
+    background: rgba(255, 0, 128, 0.05);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 0, 128, 0.2);
+    border: 1px solid rgba(255, 0, 128, 0.1);
     box-shadow: 
-      0 8px 32px 0 rgba(255, 0, 128, 0.2),
-      inset 0 0 0 1px rgba(255, 0, 128, 0.1);
+      0 8px 32px 0 rgba(255, 0, 128, 0.1),
+      inset 0 0 0 1px rgba(255, 0, 128, 0.05);
   }
 
-  /* Holographic Cards */
+  /* Holographic Cards - Reduced Intensity */
   .hologram-card {
     background: linear-gradient(45deg, 
-      rgba(255, 0, 128, 0.1) 0%,
-      rgba(0, 102, 255, 0.1) 50%,
-      rgba(0, 255, 136, 0.1) 100%);
+      rgba(255, 0, 128, 0.05) 0%,
+      rgba(0, 102, 255, 0.05) 50%,
+      rgba(0, 255, 136, 0.05) 100%);
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     position: relative;
@@ -249,9 +241,9 @@
   .btn-neon:hover {
     color: white;
     box-shadow: 
-      0 0 20px var(--neon-pink),
-      inset 0 0 20px rgba(255, 0, 128, 0.1);
-    text-shadow: 0 0 10px var(--neon-pink);
+      0 0 10px var(--neon-pink),
+      inset 0 0 10px rgba(255, 0, 128, 0.05);
+    text-shadow: 0 0 5px var(--neon-pink);
   }
 
   /* Retro Grid */
@@ -294,7 +286,7 @@
     height: 100%;
     pointer-events: none;
     z-index: -1;
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   /* Floating Particles */
