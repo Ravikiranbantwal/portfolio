@@ -122,26 +122,7 @@ export const projects: Project[] = [
     status: "completed",
     year: 2023
   },
-  {
-    id: "portfolio-website",
-    title: "Interactive Portfolio Website",
-    description: "Personal portfolio with stunning animations and 3D effects.",
-    longDescription: "This very website you're viewing! Built with React, TypeScript, Three.js, and GSAP. Features include scroll-triggered animations, particle effects, 3D models, and responsive design.",
-    image: "/assets/images/projects/portfolio-preview.jpg",
-    images: [
-      "/assets/images/projects/portfolio-1.jpg",
-      "/assets/images/projects/portfolio-2.jpg"
-    ],
-    technologies: ["React", "TypeScript", "Three.js", "GSAP", "Tailwind CSS", "Framer Motion"],
-    category: "web",
-    featured: true,
-    links: {
-      demo: "https://ravikiranbantwal.com",
-      github: "https://github.com/ravikiranbantwal/portfolio"
-    },
-    status: "completed",
-    year: 2024
-  },
+
   {
     id: "design-system",
     title: "Component Design System",
