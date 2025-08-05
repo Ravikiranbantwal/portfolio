@@ -6,6 +6,7 @@ A modern, responsive portfolio website showcasing my projects and skills. Built 
 
 - **Main Portfolio**: [https://rkbantwal.netlify.app](https://rkbantwal.netlify.app)
 - **Analytics Dashboard**: [https://analytics-dashboard-rkbantwal.netlify.app](https://analytics-dashboard-rkbantwal.netlify.app)
+- **Gen Z Portfolio Demo**: [https://genz-portfolio-demo-rkbantwal.netlify.app](https://genz-portfolio-demo-rkbantwal.netlify.app)
 
 ## 📁 Project Structure
 
@@ -17,6 +18,9 @@ portfolio/
 │   └── styles/            # Global styles
 ├── analytics-dashboard/    # Separate analytics dashboard project
 │   ├── src/               # Dashboard source code
+│   └── netlify.toml       # Netlify configuration
+├── genz-portfolio-demo/   # Gen Z portfolio demo project
+│   ├── src/               # Demo source code with 3D animations
 │   └── netlify.toml       # Netlify configuration for dashboard
 ├── netlify.toml           # Netlify configuration for main portfolio
 └── README.md              # This file

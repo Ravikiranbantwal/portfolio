@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gen Z Portfolio Demo - Vibes Only 🔥</title>
+    <meta name="description" content="A vibrant, animated Gen Z styled portfolio demo with neon aesthetics, 3D elements, and cyber vibes" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Gen Z Portfolio Demo - Vibes Only 🔥" />
+    <meta property="og:description" content="Experience the future of portfolio design with neon aesthetics and cyber vibes" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Gen Z Portfolio Demo" />
+    <meta name="twitter:description" content="Neon aesthetics meet cyber vibes ✨" />
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#ff0080" />
+    
+    <!-- Prevent zoom on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+  <body class="antialiased">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-cyber-black">
+      <div class="text-center">
+        <div class="text-6xl font-cyber text-neon mb-4 animate-neon-pulse">
+          LOADING
+        </div>
+        <div class="w-32 h-1 bg-cyber-dark rounded-full overflow-hidden">
+          <div class="h-full bg-gradient-neon animate-pulse"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Matrix Rain Background -->
+    <div id="matrix-rain" class="matrix-rain"></div>
+    
+    <!-- Main App -->
+    <div id="root"></div>
+    
+    <!-- Scripts -->
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Loading Screen Script -->
+    <script>
+      // Hide loading screen after page loads
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          const loadingScreen = document.getElementById('loading-screen');
+          if (loadingScreen) {
+            loadingScreen.style.opacity = '0';
+            loadingScreen.style.transition = 'opacity 0.5s ease-out';
+            setTimeout(() => {
+              loadingScreen.remove();
+            }, 500);
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>

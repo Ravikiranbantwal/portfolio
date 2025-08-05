@@ -19,6 +19,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "genz-portfolio-demo",
+    title: "Gen Z Portfolio Demo",
+    description: "Next-generation portfolio with cyberpunk aesthetics and 3D animations.",
+    longDescription: "A cutting-edge portfolio demo featuring neon aesthetics, cyberpunk vibes, and interactive 3D elements. Built with React, Three.js, Framer Motion, and GSAP. Features include floating 3D geometry, particle systems, confetti explosions, and cyberpunk design language.",
+    image: "/assets/images/projects/genz-demo-preview.jpg",
+    images: [
+      "/assets/images/projects/genz-demo-1.jpg",
+      "/assets/images/projects/genz-demo-2.jpg",
+      "/assets/images/projects/genz-demo-3.jpg"
+    ],
+    technologies: ["React", "TypeScript", "Three.js", "Framer Motion", "GSAP", "Tailwind CSS", "Canvas Confetti"],
+    category: "web",
+    featured: true,
+    links: {
+      demo: "https://genz-portfolio-demo-rkbantwal.netlify.app",
+      github: "https://github.com/Ravikiranbantwal/portfolio/tree/main/genz-portfolio-demo"
+    },
+    status: "completed",
+    year: 2024
+  },
+  {
     id: "analytics-dashboard",
     title: "Analytics Dashboard",
     description: "A beautiful and responsive analytics dashboard with real-time data visualization.",
