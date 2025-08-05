@@ -65,7 +65,7 @@ const HeroSection: React.FC = () => {
           className="mb-8"
         >
           <h1 
-            className="text-responsive-5xl font-cyber font-black text-neon glitch mb-4"
+            className="text-responsive-5xl font-space font-bold text-neon mb-4"
             data-text="WELCOME TO THE FUTURE"
           >
             WELCOME TO THE FUTURE
