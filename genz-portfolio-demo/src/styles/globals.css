@@ -89,12 +89,12 @@
 }
 
 @layer components {
-  /* Neon Text Effects - Reduced Intensity */
+  /* Neon Text Effects - Further Reduced Intensity (50% less) */
   .text-neon {
     color: var(--neon-pink);
     text-shadow: 
-      0 0 2px currentColor,
-      0 0 4px currentColor;
+      0 0 1px currentColor,
+      0 0 2px currentColor;
     animation: neon-pulse 2s ease-in-out infinite alternate;
   }
 
@@ -241,9 +241,9 @@
   .btn-neon:hover {
     color: white;
     box-shadow: 
-      0 0 10px var(--neon-pink),
-      inset 0 0 10px rgba(255, 0, 128, 0.05);
-    text-shadow: 0 0 5px var(--neon-pink);
+      0 0 5px var(--neon-pink),
+      inset 0 0 5px rgba(255, 0, 128, 0.025);
+    text-shadow: 0 0 2px var(--neon-pink);
   }
 
   /* Retro Grid */

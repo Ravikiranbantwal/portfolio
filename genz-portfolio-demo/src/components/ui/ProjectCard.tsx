@@ -56,8 +56,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
   const glowVariants = {
     initial: { opacity: 0, scale: 0.8 },
     hover: { 
-      opacity: 1, 
-      scale: 1.2,
+      opacity: 0.5, 
+      scale: 1.1,
       transition: {
         duration: 0.3
       }
@@ -78,9 +78,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
       viewport={{ once: true, amount: 0.3 }}
     >
       <div className="relative">
-        {/* Glow Effect */}
+        {/* Glow Effect - Reduced Intensity */}
         <motion.div
-          className={`absolute inset-0 rounded-2xl blur-xl bg-gradient-to-r ${project.gradient} opacity-0`}
+          className={`absolute inset-0 rounded-2xl blur-md bg-gradient-to-r ${project.gradient} opacity-0`}
           variants={glowVariants}
           initial="initial"
           animate={isHovered ? "hover" : "initial"}
@@ -152,9 +152,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: index * 0.1 + techIndex * 0.05 }}
                 whileHover={{ 
-                  scale: 1.1,
-                  backgroundColor: 'rgba(0, 255, 255, 0.1)',
-                  boxShadow: '0 0 10px rgba(0, 255, 255, 0.5)'
+                  scale: 1.05,
+                  backgroundColor: 'rgba(0, 255, 255, 0.05)',
+                  boxShadow: '0 0 5px rgba(0, 255, 255, 0.25)'
                 }}
               >
                 {tech}
