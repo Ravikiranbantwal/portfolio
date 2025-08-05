@@ -33,7 +33,7 @@ export const projects: Project[] = [
     category: "web",
     featured: true,
     links: {
-      demo: "https://rkbantwal.netlify.app",
+      demo: "https://analytics-dashboard-rkbantwal.netlify.app",
       github: "https://github.com/Ravikiranbantwal/portfolio/tree/main/analytics-dashboard"
     },
     status: "completed",
