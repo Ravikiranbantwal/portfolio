@@ -4,8 +4,8 @@ A modern, responsive portfolio website showcasing my projects and skills. Built 
 
 ## 🚀 Live Demo
 
-- **Main Portfolio**: [https://ravikiranbantwal.netlify.app](https://ravikiranbantwal.netlify.app)
-- **Analytics Dashboard**: [https://ravikiranbantwal-analytics.netlify.app](https://ravikiranbantwal-analytics.netlify.app)
+- **Main Portfolio**: [https://rkbantwal.netlify.app](https://rkbantwal.netlify.app)
+- **Analytics Dashboard**: [https://rkbantwal.netlify.app](https://rkbantwal.netlify.app) (same site, different deployment)
 
 ## 📁 Project Structure
 
