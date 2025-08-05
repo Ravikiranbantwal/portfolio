@@ -10,17 +10,26 @@ export const HeroSection: React.FC = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
+    let lastTime = 0;
+    
     const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 2 - 1,
-        y: -(e.clientY / window.innerHeight) * 2 + 1,
-      });
+      const now = Date.now();
+      // Throttle to 60fps
+      if (now - lastTime < 16) return;
+      lastTime = now;
+      
+      // Reduced sensitivity - much smaller movement range
+      const x = ((e.clientX / window.innerWidth) * 2 - 1) * 0.5;
+      const y = (-(e.clientY / window.innerHeight) * 2 + 1) * 0.5;
+      setMousePosition({ x, y });
     };
 
     window.addEventListener('mousemove', handleMouseMove);
     setTimeout(() => setIsLoaded(true), 1000);
 
-    return () => window.removeEventListener('mousemove', handleMouseMove);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
   }, []);
 
   const containerVariants = {
@@ -56,7 +65,7 @@ export const HeroSection: React.FC = () => {
         <Scene
           enableControls={false}
           enableEffects={true}
-          cameraPosition={[mousePosition.x * 2, mousePosition.y * 2, 8]}
+          cameraPosition={[mousePosition.x, mousePosition.y, 8]}
         />
       </div>
 

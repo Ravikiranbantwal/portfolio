@@ -14,7 +14,10 @@ interface SceneProps {
   className?: string;
 }
 
-function SceneContent({ enableControls = true, enableEffects = true }: Omit<SceneProps, 'className'>) {
+function SceneContent({ 
+  enableControls = true, 
+  enableEffects = true
+}: Omit<SceneProps, 'className' | 'cameraPosition'>) {
   return (
     <>
       {/* Lighting */}
@@ -104,6 +107,11 @@ export const Scene: React.FC<SceneProps> = ({
           antialias: true,
           alpha: true,
           powerPreference: 'high-performance'
+        }}
+        performance={{
+          min: 0.5,
+          max: 1,
+          debounce: 100, // Debounce performance changes
         }}
       >
         <SceneContent 

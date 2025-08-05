@@ -8,6 +8,7 @@ A modern, responsive portfolio website showcasing my projects and skills. Built 
 - **Analytics Dashboard**: [https://analytics-dashboard-rkbantwal.netlify.app](https://analytics-dashboard-rkbantwal.netlify.app)
 - **Gen Z Portfolio Demo**: [https://genz-portfolio-demo-rkbantwal.netlify.app](https://genz-portfolio-demo-rkbantwal.netlify.app)
 - **South Indian Restaurant**: [https://south-indian-restaurant-rkbantwal.netlify.app](https://south-indian-restaurant-rkbantwal.netlify.app)
+- **Interactive Portfolio 3D**: [https://interactive-portfolio-3d-rkbantwal.netlify.app](https://interactive-portfolio-3d-rkbantwal.netlify.app)
 
 ## 📁 Project Structure
 
@@ -25,6 +26,9 @@ portfolio/
 │   └── netlify.toml       # Netlify configuration
 ├── south-indian-restaurant/ # South Indian restaurant project
 │   ├── src/               # Restaurant website source code
+│   └── netlify.toml       # Netlify configuration
+├── interactive-portfolio-3d/ # Interactive 3D portfolio project
+│   ├── src/               # 3D portfolio source code
 │   └── netlify.toml       # Netlify configuration for dashboard
 ├── netlify.toml           # Netlify configuration for main portfolio
 └── README.md              # This file

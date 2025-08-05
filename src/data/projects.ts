@@ -19,6 +19,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "interactive-portfolio-3d",
+    title: "Interactive Portfolio 3D",
+    description: "Stunning 3D portfolio with advanced animations and Three.js effects.",
+    longDescription: "A cutting-edge interactive portfolio featuring advanced 3D animations, Three.js graphics, and immersive user experience. Built with React, TypeScript, Three.js, and Framer Motion. Includes 3D models, particle effects, smooth animations, and responsive design.",
+    image: "/assets/images/projects/3d-portfolio-preview.jpg",
+    images: [
+      "/assets/images/projects/3d-portfolio-1.jpg",
+      "/assets/images/projects/3d-portfolio-2.jpg",
+      "/assets/images/projects/3d-portfolio-3.jpg"
+    ],
+    technologies: ["React", "TypeScript", "Three.js", "Framer Motion", "React Three Fiber", "Tailwind CSS"],
+    category: "web",
+    featured: true,
+    links: {
+      demo: "https://interactive-portfolio-3d-rkbantwal.netlify.app",
+      github: "https://github.com/Ravikiranbantwal/portfolio/tree/main/interactive-portfolio-3d"
+    },
+    status: "completed",
+    year: 2024
+  },
+  {
     id: "south-indian-restaurant",
     title: "South Indian Restaurant",
     description: "Modern restaurant website with online ordering and menu management.",
