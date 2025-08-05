@@ -52,6 +52,31 @@ portfolio/
 - **React Router** - Navigation
 - **Lucide React** - Icons
 
+### Interactive Portfolio 3D
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Three.js** - 3D graphics and animations
+- **React Three Fiber** - React renderer for Three.js
+- **Framer Motion** - Component animations
+- **Tailwind CSS** - Styling
+
+### Gen Z Portfolio Demo
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Three.js** - 3D graphics
+- **Framer Motion** - Animations
+- **GSAP** - Advanced animations
+- **Canvas Confetti** - Interactive effects
+- **Tailwind CSS** - Styling
+
+### South Indian Restaurant
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **React Router** - Navigation
+- **React Hot Toast** - Notifications
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -71,9 +96,25 @@ portfolio/
    npm install
    ```
 
-3. **Install dependencies for analytics dashboard**
+3. **Install dependencies for all sub-projects**
    ```bash
+   # Analytics Dashboard
    cd analytics-dashboard
+   npm install
+   cd ..
+   
+   # Gen Z Portfolio Demo
+   cd genz-portfolio-demo
+   npm install
+   cd ..
+   
+   # South Indian Restaurant
+   cd south-indian-restaurant
+   npm install
+   cd ..
+   
+   # Interactive Portfolio 3D
+   cd interactive-portfolio-3d
    npm install
    cd ..
    ```
@@ -85,10 +126,27 @@ portfolio/
    npm run dev
    ```
 
-2. **Run analytics dashboard**
+2. **Run sub-projects**
    ```bash
+   # Analytics Dashboard
    cd analytics-dashboard
    npm run dev
+   cd ..
+   
+   # Gen Z Portfolio Demo
+   cd genz-portfolio-demo
+   npm run dev
+   cd ..
+   
+   # South Indian Restaurant
+   cd south-indian-restaurant
+   npm run dev
+   cd ..
+   
+   # Interactive Portfolio 3D
+   cd interactive-portfolio-3d
+   npm run dev
+   cd ..
    ```
 
 ### Building for Production
@@ -98,10 +156,27 @@ portfolio/
    npm run build
    ```
 
-2. **Build analytics dashboard**
+2. **Build sub-projects**
    ```bash
+   # Analytics Dashboard
    cd analytics-dashboard
    npm run build
+   cd ..
+   
+   # Gen Z Portfolio Demo
+   cd genz-portfolio-demo
+   npm run build
+   cd ..
+   
+   # South Indian Restaurant
+   cd south-indian-restaurant
+   npm run build
+   cd ..
+   
+   # Interactive Portfolio 3D
+   cd interactive-portfolio-3d
+   npm run build
+   cd ..
    ```
 
 ## 🌐 Deployment
@@ -121,15 +196,48 @@ Both projects are configured for automatic deployment on Netlify:
    - Base directory: `analytics-dashboard`
    - Environment: Node.js 18
 
+3. **Gen Z Portfolio Demo**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Base directory: `genz-portfolio-demo`
+   - Environment: Node.js 18
+
+4. **South Indian Restaurant**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Base directory: `south-indian-restaurant`
+   - Environment: Node.js 18
+
+5. **Interactive Portfolio 3D**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Base directory: `interactive-portfolio-3d`
+   - Environment: Node.js 18
+
 ### Manual Deployment
 
-1. **Build both projects**
+1. **Build all projects**
    ```bash
    # Build main portfolio
    npm run build
    
    # Build analytics dashboard
    cd analytics-dashboard
+   npm run build
+   cd ..
+   
+   # Build Gen Z Portfolio Demo
+   cd genz-portfolio-demo
+   npm run build
+   cd ..
+   
+   # Build South Indian Restaurant
+   cd south-indian-restaurant
+   npm run build
+   cd ..
+   
+   # Build Interactive Portfolio 3D
+   cd interactive-portfolio-3d
    npm run build
    cd ..
    ```
@@ -159,6 +267,9 @@ Both projects are configured for automatic deployment on Netlify:
 
 The portfolio includes links to live demos of my projects:
 
+- **Interactive Portfolio 3D** - Advanced 3D portfolio with Three.js animations and immersive experience
+- **South Indian Restaurant** - Modern restaurant website with online ordering system
+- **Gen Z Portfolio Demo** - Cyberpunk-themed portfolio with neon aesthetics and 3D effects
 - **Analytics Dashboard** - A comprehensive analytics dashboard with real-time data visualization
 - **E-Commerce App** - Full-featured mobile e-commerce application
 - **Design System** - Reusable component library and design tokens
