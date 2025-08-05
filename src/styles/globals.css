@@ -1,0 +1,182 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary: #6366f1;
+    --secondary: #ec4899;
+    --accent: #f59e0b;
+
+    /* Neutral Colors */
+    --background: #0f0f23;
+    --surface: #1a1a2e;
+    --surface-light: #242447;
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #6366f1, #ec4899);
+    --gradient-secondary: linear-gradient(135deg, #f59e0b, #ec4899);
+    --gradient-dark: linear-gradient(135deg, #0f0f23, #1a1a2e);
+
+    /* Animation Variables */
+    --ease: cubic-bezier(0.4, 0, 0.2, 1);
+    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --duration-fast: 300ms;
+    --duration-normal: 500ms;
+    --duration-slow: 800ms;
+  }
+
+  * {
+    border-color: theme('colors.primary.50');
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-text-primary font-inter antialiased;
+    background: var(--background);
+    background-image: 
+      radial-gradient(at 40% 20%, rgba(99, 102, 241, 0.1) 0px, transparent 50%),
+      radial-gradient(at 80% 0%, rgba(236, 72, 153, 0.1) 0px, transparent 50%),
+      radial-gradient(at 0% 50%, rgba(245, 158, 11, 0.1) 0px, transparent 50%);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
+  }
+
+  /* Selection styles */
+  ::selection {
+    @apply bg-primary/30 text-white;
+  }
+
+  /* Focus styles */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  }
+}
+
+@layer components {
+  /* Button Components */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-primary text-white hover:shadow-lg hover:shadow-primary/25 hover:scale-105 active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply btn bg-surface border border-primary/20 text-text-primary hover:bg-surface-light hover:border-primary/40;
+  }
+
+  .btn-ghost {
+    @apply btn text-text-secondary hover:text-text-primary hover:bg-surface/50;
+  }
+
+  /* Card Components */
+  .card {
+    @apply bg-surface/50 backdrop-blur-sm border border-primary/10 rounded-2xl p-6 transition-all duration-500;
+  }
+
+  .card-hover {
+    @apply card hover:bg-surface/80 hover:border-primary/20 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1;
+  }
+
+  /* Glass Effect */
+  .glass {
+    @apply bg-surface/20 backdrop-blur-lg border border-white/10;
+  }
+
+  /* Text Gradients */
+  .text-gradient {
+    @apply bg-gradient-primary bg-clip-text text-transparent;
+  }
+
+  .text-gradient-secondary {
+    @apply bg-gradient-secondary bg-clip-text text-transparent;
+  }
+
+  /* Section Spacing */
+  .section {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-sm {
+    @apply py-12 px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Container */
+  .container {
+    @apply mx-auto max-w-7xl;
+  }
+
+  /* Animations */
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Particle effect base */
+  .particles-container {
+    @apply absolute inset-0 overflow-hidden pointer-events-none;
+  }
+
+  .particle {
+    @apply absolute w-1 h-1 bg-primary/30 rounded-full animate-float;
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes pulse-glow {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+  }
+
+  /* Responsive text sizes */
+  .text-responsive-xs { @apply text-xs sm:text-sm; }
+  .text-responsive-sm { @apply text-sm sm:text-base; }
+  .text-responsive-base { @apply text-base sm:text-lg; }
+  .text-responsive-lg { @apply text-lg sm:text-xl; }
+  .text-responsive-xl { @apply text-xl sm:text-2xl; }
+  .text-responsive-2xl { @apply text-2xl sm:text-3xl lg:text-4xl; }
+  .text-responsive-3xl { @apply text-3xl sm:text-4xl lg:text-5xl; }
+  .text-responsive-4xl { @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl; }
+
+  /* Spacing utilities */
+  .space-section { @apply space-y-20; }
+  .space-section-sm { @apply space-y-12; }
+}
