@@ -72,7 +72,7 @@ export const resumeData = {
     contact: {
       email: "bantwalravikiran@gmail.com",
       phone: "+91 98118 54273",
-      location: "Bangalore, India"
+      location: "Bangalore, Bharath"
     },
     social: {
       github: "https://github.com/Ravikiranbantwal",
@@ -118,7 +118,7 @@ export const resumeData = {
       company: "Freelance",
       position: "Full Stack Developer & Mobile App Developer",
       duration: "2020 - Present",
-      location: "Bangalore, India",
+      location: "Bangalore, Bharath",
       type: "Freelance",
       description: "Specialized in developing modern web applications and mobile apps using cutting-edge technologies. Delivered high-quality solutions for diverse client requirements.",
       achievements: [
@@ -135,7 +135,7 @@ export const resumeData = {
       company: "BSNL",
       position: "Junior Telecom Officer",
       duration: "2010 - 2022",
-      location: "Bangalore, India",
+      location: "Bangalore, Bharath",
       type: "Full-time",
       description: "Managed telecommunications infrastructure and network operations. Provided technical support and maintained network connectivity for customers.",
       achievements: [
@@ -152,7 +152,7 @@ export const resumeData = {
       company: "Global Network Solutions",
       position: "Network Administrator",
       duration: "2005 - 2010",
-      location: "Mangalore, India",
+      location: "Mangalore, Bharath",
       type: "Full-time",
       description: "Administered network infrastructure and provided technical support for corporate clients. Managed server configurations and network security.",
       achievements: [
