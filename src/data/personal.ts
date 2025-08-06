@@ -18,7 +18,7 @@ export const personalData = {
     discord: "ravikiran#1234",
   },
   
-  resume: "/assets/resume.pdf",
+  resume: "https://professional-resume-rkbantwal.netlify.app",
   
   availability: {
     status: "Available for freelance projects",

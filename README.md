@@ -5,11 +5,13 @@ A modern, responsive portfolio website showcasing my projects and skills. Built 
 ## 🚀 Live Demo
 
 - **Main Portfolio**: [https://rkbantwal.netlify.app](https://rkbantwal.netlify.app)
+- **Professional Resume**: [https://professional-resume-rkbantwal.netlify.app](https://professional-resume-rkbantwal.netlify.app)
 - **Analytics Dashboard**: [https://analytics-dashboard-rkbantwal.netlify.app](https://analytics-dashboard-rkbantwal.netlify.app)
 - **Gen Z Portfolio Demo**: [https://genz-portfolio-demo-rkbantwal.netlify.app](https://genz-portfolio-demo-rkbantwal.netlify.app)
 - **South Indian Restaurant**: [https://south-indian-restaurant-rkbantwal.netlify.app](https://south-indian-restaurant-rkbantwal.netlify.app)
 - **Interactive Portfolio 3D**: [https://interactive-portfolio-3d-rkbantwal.netlify.app](https://interactive-portfolio-3d-rkbantwal.netlify.app)
 - **Neural News AI**: [https://ai-news-demo-rkbantwal.netlify.app](https://ai-news-demo-rkbantwal.netlify.app)
+- **Professional Resume**: [https://professional-resume-rkbantwal.netlify.app](https://professional-resume-rkbantwal.netlify.app)
 
 ## 📁 Project Structure
 
@@ -33,6 +35,9 @@ portfolio/
 │   └── netlify.toml       # Netlify configuration
 ├── ai-news-demo/          # Neural News AI project
 │   ├── src/               # AI news demo with neural networks and 3D effects
+│   └── netlify.toml       # Netlify configuration
+├── professional-resume/    # Professional resume website
+│   ├── src/               # Resume website with modern design
 │   └── netlify.toml       # Netlify configuration
 ├── netlify.toml           # Netlify configuration for main portfolio
 └── README.md              # This file
@@ -90,6 +95,14 @@ portfolio/
 - **Canvas Confetti** - Interactive effects
 - **Tailwind CSS** - Styling
 
+### Professional Resume
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Lucide React** - Icons
+- **DOMPurify** - Security
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -135,6 +148,11 @@ portfolio/
    cd ai-news-demo
    npm install
    cd ..
+   
+   # Professional Resume
+   cd professional-resume
+   npm install
+   cd ..
    ```
 
 ### Development
@@ -170,6 +188,11 @@ portfolio/
    cd ai-news-demo
    npm run dev
    cd ..
+   
+   # Professional Resume
+   cd professional-resume
+   npm run dev
+   cd ..
    ```
 
 ### Building for Production
@@ -203,6 +226,11 @@ portfolio/
    
    # Neural News AI Demo
    cd ai-news-demo
+   npm run build
+   cd ..
+   
+   # Professional Resume
+   cd professional-resume
    npm run build
    cd ..
    ```
@@ -248,6 +276,12 @@ Both projects are configured for automatic deployment on Netlify:
    - Base directory: `ai-news-demo`
    - Environment: Node.js 18
 
+7. **Professional Resume**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Base directory: `professional-resume`
+   - Environment: Node.js 18
+
 ### Manual Deployment
 
 1. **Build all projects**
@@ -277,6 +311,11 @@ Both projects are configured for automatic deployment on Netlify:
    
    # Build Neural News AI Demo
    cd ai-news-demo
+   npm run build
+   cd ..
+   
+   # Build Professional Resume
+   cd professional-resume
    npm run build
    cd ..
    ```
@@ -338,6 +377,15 @@ Both projects are configured for automatic deployment on Netlify:
 - 📱 Responsive design with cyberpunk aesthetics
 - ⚡ Advanced particle systems and effects
 
+### Professional Resume
+- 📄 Modern, responsive resume design
+- 🎨 Clean and professional layout
+- 📱 Mobile-first responsive design
+- ⚡ Fast loading with optimized assets
+- 🎯 Interactive sections and animations
+- 🔒 Secure content with DOMPurify
+- 📊 Skills visualization and experience timeline
+
 ## 🎯 Project Showcase
 
 The portfolio includes links to live demos of my projects:
@@ -347,6 +395,7 @@ The portfolio includes links to live demos of my projects:
 - **Gen Z Portfolio Demo** - Cyberpunk-themed portfolio with neon aesthetics and 3D effects
 - **Analytics Dashboard** - A comprehensive analytics dashboard with real-time data visualization
 - **Neural News AI Demo** - AI-powered news intelligence system with neural network effects
+- **Professional Resume** - Modern, responsive resume website with interactive design
 - **E-Commerce App** - Full-featured mobile e-commerce application
 - **Design System** - Reusable component library and design tokens
 
