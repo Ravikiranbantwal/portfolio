@@ -11,7 +11,7 @@ export const personalData = {
   },
   
   social: {
-    github: "https://github.com/ravikiranbantwal",
+    github: "https://github.com/Ravikiranbantwal",
     linkedin: "https://linkedin.com/in/ravikiranbantwal",
     twitter: "https://twitter.com/ravikiranbantwal",
     instagram: "https://instagram.com/ravikiranbantwal",

@@ -263,6 +263,33 @@ Both projects are configured for automatic deployment on Netlify:
 - 🌙 Dark/light theme support
 - ⚡ Fast and performant
 
+### Interactive Portfolio 3D
+- 🎮 Advanced 3D animations and effects
+- 🌐 Three.js powered graphics
+- 🎯 Immersive user experience
+- 📱 Responsive 3D design
+- ⚡ Optimized performance
+- 🎨 Smooth camera controls
+- 🔄 Interactive 3D models
+
+### Gen Z Portfolio Demo
+- 🌟 Cyberpunk aesthetics and neon effects
+- 🎭 Advanced animations with GSAP
+- 🎨 Neon glow and hologram effects
+- 📱 Mobile-responsive design
+- ⚡ Fast loading with code splitting
+- 🎯 Interactive particle systems
+- 🌈 Confetti explosions and effects
+
+### South Indian Restaurant
+- 🍽️ Online food ordering system
+- 📋 Menu management and display
+- 🎨 Modern restaurant design
+- 📱 Mobile-first responsive layout
+- ⚡ Fast and intuitive interface
+- 🎯 Table reservation system
+- 🌟 Customer reviews and ratings
+
 ## 🎯 Project Showcase
 
 The portfolio includes links to live demos of my projects:
