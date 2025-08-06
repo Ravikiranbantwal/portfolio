@@ -103,6 +103,27 @@ export const projects: Project[] = [
     year: 2024
   },
   {
+    id: "ai-news-demo",
+    title: "AI News Demo",
+    description: "Modern news application with AI-powered content and interactive features.",
+    longDescription: "A cutting-edge news application featuring AI-powered content curation, interactive 3D elements, and modern UI/UX. Built with React, TypeScript, Three.js, and Framer Motion. Includes 3D animations, particle effects, and responsive design.",
+    image: "/assets/images/projects/ai-news-preview.jpg",
+    images: [
+      "/assets/images/projects/ai-news-1.jpg",
+      "/assets/images/projects/ai-news-2.jpg",
+      "/assets/images/projects/ai-news-3.jpg"
+    ],
+    technologies: ["React", "TypeScript", "Three.js", "Framer Motion", "GSAP", "Tailwind CSS", "Canvas Confetti"],
+    category: "web",
+    featured: true,
+    links: {
+      demo: "https://ai-news-demo-rkbantwal.netlify.app",
+      github: "https://github.com/Ravikiranbantwal/portfolio/tree/main/ai-news-demo"
+    },
+    status: "completed",
+    year: 2024
+  },
+  {
     id: "ecommerce-app",
     title: "E-Commerce Mobile App",
     description: "Full-featured e-commerce app with seamless shopping experience.",

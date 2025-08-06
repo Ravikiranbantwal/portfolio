@@ -9,6 +9,7 @@ A modern, responsive portfolio website showcasing my projects and skills. Built 
 - **Gen Z Portfolio Demo**: [https://genz-portfolio-demo-rkbantwal.netlify.app](https://genz-portfolio-demo-rkbantwal.netlify.app)
 - **South Indian Restaurant**: [https://south-indian-restaurant-rkbantwal.netlify.app](https://south-indian-restaurant-rkbantwal.netlify.app)
 - **Interactive Portfolio 3D**: [https://interactive-portfolio-3d-rkbantwal.netlify.app](https://interactive-portfolio-3d-rkbantwal.netlify.app)
+- **Neural News AI**: [https://ai-news-demo-rkbantwal.netlify.app](https://ai-news-demo-rkbantwal.netlify.app)
 
 ## 📁 Project Structure
 
@@ -29,7 +30,10 @@ portfolio/
 │   └── netlify.toml       # Netlify configuration
 ├── interactive-portfolio-3d/ # Interactive 3D portfolio project
 │   ├── src/               # 3D portfolio source code
-│   └── netlify.toml       # Netlify configuration for dashboard
+│   └── netlify.toml       # Netlify configuration
+├── ai-news-demo/          # Neural News AI project
+│   ├── src/               # AI news demo with neural networks and 3D effects
+│   └── netlify.toml       # Netlify configuration
 ├── netlify.toml           # Netlify configuration for main portfolio
 └── README.md              # This file
 ```
@@ -77,6 +81,15 @@ portfolio/
 - **React Router** - Navigation
 - **React Hot Toast** - Notifications
 
+### Neural News AI Demo
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Three.js** - 3D graphics and neural network effects
+- **Framer Motion** - Component animations
+- **GSAP** - Advanced animations
+- **Canvas Confetti** - Interactive effects
+- **Tailwind CSS** - Styling
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -117,6 +130,11 @@ portfolio/
    cd interactive-portfolio-3d
    npm install
    cd ..
+   
+   # Neural News AI Demo
+   cd ai-news-demo
+   npm install
+   cd ..
    ```
 
 ### Development
@@ -147,6 +165,11 @@ portfolio/
    cd interactive-portfolio-3d
    npm run dev
    cd ..
+   
+   # Neural News AI Demo
+   cd ai-news-demo
+   npm run dev
+   cd ..
    ```
 
 ### Building for Production
@@ -175,6 +198,11 @@ portfolio/
    
    # Interactive Portfolio 3D
    cd interactive-portfolio-3d
+   npm run build
+   cd ..
+   
+   # Neural News AI Demo
+   cd ai-news-demo
    npm run build
    cd ..
    ```
@@ -214,6 +242,12 @@ Both projects are configured for automatic deployment on Netlify:
    - Base directory: `interactive-portfolio-3d`
    - Environment: Node.js 18
 
+6. **Neural News AI Demo**
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+   - Base directory: `ai-news-demo`
+   - Environment: Node.js 18
+
 ### Manual Deployment
 
 1. **Build all projects**
@@ -238,6 +272,11 @@ Both projects are configured for automatic deployment on Netlify:
    
    # Build Interactive Portfolio 3D
    cd interactive-portfolio-3d
+   npm run build
+   cd ..
+   
+   # Build Neural News AI Demo
+   cd ai-news-demo
    npm run build
    cd ..
    ```
@@ -290,6 +329,15 @@ Both projects are configured for automatic deployment on Netlify:
 - 🎯 Table reservation system
 - 🌟 Customer reviews and ratings
 
+### Neural News AI Demo
+- 🤖 AI-powered news intelligence system
+- 🧠 Neural network visualizations and effects
+- 🎮 Interactive 3D elements and animations
+- 📊 Real-time sentiment analysis
+- 🎨 Holographic card design with uniform sizing
+- 📱 Responsive design with cyberpunk aesthetics
+- ⚡ Advanced particle systems and effects
+
 ## 🎯 Project Showcase
 
 The portfolio includes links to live demos of my projects:
@@ -298,6 +346,7 @@ The portfolio includes links to live demos of my projects:
 - **South Indian Restaurant** - Modern restaurant website with online ordering system
 - **Gen Z Portfolio Demo** - Cyberpunk-themed portfolio with neon aesthetics and 3D effects
 - **Analytics Dashboard** - A comprehensive analytics dashboard with real-time data visualization
+- **Neural News AI Demo** - AI-powered news intelligence system with neural network effects
 - **E-Commerce App** - Full-featured mobile e-commerce application
 - **Design System** - Reusable component library and design tokens
 
