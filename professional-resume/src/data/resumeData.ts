@@ -234,40 +234,68 @@ export const resumeData = {
     }
   ] as Project[],
 
-  education: [
-    {
-      institution: "University of Technology",
-      degree: "Bachelor of Engineering",
-      field: "Computer Science & Engineering",
-      duration: "2001 - 2005",
-      location: "Mangalore, India",
-      grade: "First Class",
-      achievements: [
-        "Graduated with First Class honors",
-        "Led college programming club",
-        "Won inter-college coding competition"
-      ]
-    }
-  ] as Education[],
+
 
   certifications: [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      credentialId: "AWS-SAA-123456"
+      name: "React - The Complete Guide (incl Hooks, React Router, Redux)",
+      issuer: "Udemy",
+      date: "2024",
+      link: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
     },
     {
-      name: "Professional Scrum Master I",
-      issuer: "Scrum.org",
+      name: "TypeScript - The Complete Developer's Guide",
+      issuer: "Udemy",
+      date: "2023",
+      link: "https://www.udemy.com/course/typescript-the-complete-developers-guide/"
+    },
+    {
+      name: "Python for Data Science and Machine Learning Bootcamp",
+      issuer: "Udemy",
+      date: "2023",
+      link: "https://www.udemy.com/course/python-for-data-science-and-machine-learning-bootcamp/"
+    },
+    {
+      name: "Three.js Journey - Master 3D Web Development",
+      issuer: "Udemy",
+      date: "2023",
+      link: "https://www.udemy.com/course/threejs-journey/"
+    },
+    {
+      name: "Node.js - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+      issuer: "Udemy",
       date: "2022",
-      credentialId: "PSM-789123"
+      link: "https://www.udemy.com/course/nodejs-the-complete-guide/"
     },
     {
-      name: "React Developer Certification",
-      issuer: "Meta",
-      date: "2023",
-      credentialId: "META-REACT-456789"
+      name: "FastAPI - The Complete Course",
+      issuer: "Udemy",
+      date: "2022",
+      link: "https://www.udemy.com/course/fastapi-the-complete-course/"
+    },
+    {
+      name: "Tailwind CSS From Scratch",
+      issuer: "Udemy",
+      date: "2021",
+      link: "https://www.udemy.com/course/tailwindcss-from-scratch/"
+    },
+    {
+      name: "Framer Motion - Master Animation in React",
+      issuer: "Udemy",
+      date: "2021",
+      link: "https://www.udemy.com/course/framer-motion-master-animation-in-react/"
+    },
+    {
+      name: "Git & GitHub - The Complete Git Masterclass",
+      issuer: "Udemy",
+      date: "2020",
+      link: "https://www.udemy.com/course/git-complete/"
+    },
+    {
+      name: "JavaScript - The Complete Guide 2024",
+      issuer: "Udemy",
+      date: "2019",
+      link: "https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/"
     }
   ] as Certification[],
 

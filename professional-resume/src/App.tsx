@@ -88,7 +88,6 @@ function App() {
           <Projects projects={resumeData.projects} />
           
           <Education 
-            education={resumeData.education} 
             certifications={resumeData.certifications} 
           />
         </div>
